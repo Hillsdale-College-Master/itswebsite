@@ -100,6 +100,23 @@
       color: #003366;
       font-weight: bold;
     }
+	.ticket-button {
+	  display: inline-block;
+	  background-color: #003366;
+	  color: #ffffff;
+	  padding: 15px 30px;
+	  font-size: 1.2rem;
+	  text-decoration: none;
+	  border-radius: 5px;
+	  transition: background-color 0.3s ease;
+	  /* Optional: Add a shadow if desired */
+	  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	.ticket-button:hover {
+	  background-color: #002244;
+	}
+
     /* Footer styling */
     footer {
       background-color: #003366;
@@ -126,6 +143,7 @@
       .contact-info {
         flex-direction: column;
       }
+
     }
   </style>
 </head>
@@ -163,12 +181,11 @@
       </div>
     </section>
 
-    <!-- Formstack Support Request Form Section -->
-    <section class="section formstack-container">
-      <h2>Submit a Support Request</h2>
-      <!-- Replace the src URL with your actual Formstack form embed code -->
-      <iframe src="https://www.formstack.com/forms/your-form-id" title="Support Request Form"></iframe>
-    </section>
+	<!-- Formstack Support Request Button Section -->
+	<section class="section formstack-container" style="text-align: center;">
+	  <h2>Submit a Support Request</h2>
+	  <a href="https://hillsdalecollege.samanage.com/incidents/new.portal" target="_blank" class="ticket-button">Create a ticket</a>
+	</section>
 
     <!-- Computer Labs Section -->
     <section class="section labs">
